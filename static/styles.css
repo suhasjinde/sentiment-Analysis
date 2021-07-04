@@ -1,0 +1,35 @@
+body{
+    background-image: url("images/bgImage.jpg");
+    color: rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: rgba(128, 240, 221, 0.856);
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 2%;
+}
+.c1{
+    width: 50%;
+    padding: 10%;
+    padding-bottom: 0;
+    font-weight: 800;
+}
+.footer{
+    text-align: center;
+    color: rgb(85, 155, 132);
+    position: fixed;
+    bottom: 0;
+}
+input{
+    margin: 10% 0 10% 0;
+}
+.c2{
+    text-align: center;
+    padding-top: 1%;
+    font-size: 1.5rem;
+    color: rgb(125, 245, 161);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}

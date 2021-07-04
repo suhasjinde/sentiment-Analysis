@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentimental Analysis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <h1>GET YOUR EMOTIONS CLASSIFIED!</h1>
+    <div class="container-fluid c1">
+    <form action="/processAudio" method="POST" enctype="multipart/form-data">
+          <label>Insert An Audio File (.wav file): </label> 
+          <input type="file" name="audiofile">
+          <button class="btn btn-outline-success" type="submit">Get Result!</button>
+      </form>
+    </div>
+    <div class="container-fluid c2">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <strong>{{message}}</strong>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+    <div class="container-fluid footer">
+       <em>Siddharth Malik | Suhas R Jinde | Yash Kumar Singh | Pranav Kumar</em>
+    </div>
+</body>
+</html>
